@@ -57,9 +57,11 @@ if b:tabs_enable
 	syntax match tab /\v\|.*\|/ contained contains=tab_elem,tab_delim
 	syntax match tab_elem /[^-|]/ contained
 	syntax match tab_delim /|/ contained
+	syntax match tab_comment "\s*#.*$"
 	highlight link tab_line comment
 	highlight link tab comment
 	highlight link tab_elem string
 	highlight link tab_delim special
+	highlight link tab_comment comment
 endif
 
