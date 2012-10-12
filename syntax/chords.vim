@@ -41,7 +41,7 @@ syntax case match
 set iskeyword+=#
 
 let s:suffix_regexp = "[+b\\#m[:digit:]]|maj|sus"
-let  s:chord_regexp = "<[A-H](" . s:suffix_regexp . ")*(/[A-H])?>"
+let  s:chord_regexp = "<[A-H](" . s:suffix_regexp . ")*(\\/[A-H])?>"
 let    s:tab_regexp = "^.*\\|.*$"
 
 if b:chords_enable
